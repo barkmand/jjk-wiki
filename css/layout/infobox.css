@@ -1,0 +1,49 @@
+.infobox{
+    border: 2px solid var(--accent-clr);
+    margin: 0.5rem 3rem 2rem;
+    min-width: 350px;
+    border-radius: 5px;
+    padding: 15px;
+    @media(min-width: 1080px){
+        margin-bottom: 0;
+    }
+}
+
+.infobox img{
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.infobox-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-block: 5px;
+}
+
+.infobox-info{
+    display: flex;
+    gap: 15px;
+    line-height: 1.2;
+}
+
+.info-left{
+    flex: 1;
+    text-align: end;
+}
+
+.info-right{
+    flex: 1.5;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-right-gender{
+    flex-direction: row;
+}
+
+.fa-mars{
+    transform: translateY(3px);
+}

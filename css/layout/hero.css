@@ -1,0 +1,10 @@
+
+.page-hero{
+    font-size: clamp(3.5rem, 0.732vw + 3.328rem, 4.5rem);
+    line-height: 1;
+    width: 100%;
+    text-align: center;
+    color: black;
+    -webkit-text-stroke: 0.05rem rgb(255, 255, 107);
+    margin: clamp(2rem, 1.465vw + 1.657rem, 4rem) auto clamp(3rem, 1.465vw + 2.657rem, 5rem);
+}

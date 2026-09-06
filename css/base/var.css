@@ -1,0 +1,12 @@
+:root{
+    --primary-bg-clr: #101010;
+    --secondary-bg-clr: #000000;
+    --link-clr: orange;
+    --text-clr: white;
+    --accent-clr: rgb(255, 1, 1);
+    --main-border-clr: rgba(255, 1, 1, 0.7);
+
+    /* FONTS */
+    --heading-font: "jjk-heading";
+    --subheading-font: "jjk-subheading";
+}
