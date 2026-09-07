@@ -7,7 +7,7 @@
 @import url(base/typography.css);
 
 /* Layout css */
-@import url(layout/nav.css);
+@import url(layout/page-nav.css);
 @import url(layout/hero.css);
 @import url(layout/main.css);
 @import url(layout/main-nav.css);

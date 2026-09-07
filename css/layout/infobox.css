@@ -8,6 +8,7 @@
         margin: 0.5rem 3rem 2rem;
         
         min-width: 350px;
+        max-width: 350px;
     }
 }
 
@@ -46,6 +47,6 @@
     flex-direction: row;
 }
 
-.fa-mars{
+.gender-symbol{
     transform: translateY(3px);
 }
