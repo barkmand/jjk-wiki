@@ -12,48 +12,60 @@ export async function fetchInfoboxData() {
 
 const data = await fetchInfoboxData();
 
+const search = location.search
+        const subjectID = new URLSearchParams(search).get("id")
+
+        const subject = data.find(subject => subject.id == subjectID)
+        console.log(subject)
+
 export async function infobox() {
   const infobox = document.querySelector(".infobox");
-    let i = 0
+    
 
   if (infobox) {
     infobox.insertAdjacentHTML(
       "beforeend",
       `
-                <h2>${data[i].title}</h2>
-                    <img src="${data[i].imgSource}" class="infobox-img">
+                <h2>${subject.title}</h2>
+                    <img src="${subject.imgSource}" class="infobox-img">
                     <div class="infobox-bottom">
                     <section class="infobox-info">
                         <p class="info-left">Kanji</p>
-                        <p class="info-right">${data[i].kanji}</p>
+                        <p class="info-right">${subject.kanji}</p>
                     </section>
                     <section class="infobox-info">
                         <p class="info-left">Aliases</p>
-                        <p class="info-right">${`<span></span>`}</p>
+                        <p class="info-right">${subject.aliases.map((item) => {
+                            return `<span>${item}</span>`
+                        }).join("")
+                    }</p>
                     </section>
                     <section class="infobox-info">
                         <p class="info-left">Grade</p>
-                        <p class="info-right">${data[i].grade}</p>
+                        <p class="info-right">${subject.grade}</p>
                     </section>
                     <section class="infobox-info">
                         <p class="info-left">Species</p>
-                        <p class="info-right">${data[i].species}</p>
+                        <p class="info-right">${subject.species}</p>
                     </section>
                     <section class="infobox-info">
                         <p class="info-left">Occupation</p>
-                        <p class="info-right">${data[i].occupation}</p>
+                        <p class="info-right">${subject.occupation}</p>
                     </section>
                     <section class="infobox-info">
                         <p class="info-left">Relatives</p>
-                        <p class="info-right">${`<span></span>`}</p>
+                        <p class="info-right">${subject.relatives.map((item) => {
+                            return `<span>${item}</span>`
+                        }).join("")
+                    }</p>
                     </section>
                     <section class="infobox-info">
                         <p class="info-left">Age</p>
-                        <p class="info-right">${data[i].age}</p>
+                        <p class="info-right">${subject.age}</p>
                     </section>
                     <section class="infobox-info">
                         <p class="info-left">Gender</p>
-                        <p class="info-right info-right-gender">${data[i].gender}</p>
+                        <p class="info-right info-right-gender">${subject.gender}</p>
                     </section>
                     </div>
                 `,

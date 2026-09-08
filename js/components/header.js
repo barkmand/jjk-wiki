@@ -4,6 +4,8 @@ const siteCheck = document.querySelector(".page-header")
 import { fetchInfoboxData } from "./infobox.js"
 const data = await fetchInfoboxData();
 
+        
+
 export function header(){
     if (siteCheck){
         siteCheck.insertAdjacentHTML(
@@ -22,11 +24,9 @@ export function header(){
             <hr class="menu-seperator">
                 <section class="menu-section">
                 ${data.map((element) => {
-                    `<a href="ren-fujimori.html">${element.title}</a>`
-                    
-                    console.log("pølsemix")
-                })}
-                <a href="hokuna.html">Hokuna</a>
+                    return`<a href="${element.href}?id=${element.id}">${element.title}</a>`
+                }).join("")
+            }
                 </section>
                 </div>
                 </nav>

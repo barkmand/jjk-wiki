@@ -1,47 +1,50 @@
 [
   {
     "id": "0",
+    "href": "ren-fujimori.html",
     "title": "Fujimori Ren",
     "imgSource": "assets/images/ren-fujimori.png",
     "kanji": "idk",
-    "aliases": {
-      "1": "Fujimori Ren",
-      "2": "Zen-In Ren"
-    },
+    "aliases": [
+      "Fujimori Ren",
+      "Zen-In Ren"
+    ],
     "grade": "3rd-1st",
     "species": "Human",
     "occupation": "Jujutsu High student",
-    "relatives": {
-      "1": "Parents (abandoned lmao)",
-      "2": "Sutejin (kinda)"
-    },
+    "relatives": [
+      "Parents (abandoned lmao)",
+      "Sutejin (kinda)"
+],
     "age": "like 15",
     "gender": "Androgynous"
   },
   {
     "id": "1",
+    "href": "hokuna.html",
     "title": "Sukuna (Honoka's body)",
     "imgSource": "assets/images/meguna.webp",
     "kanji": "両面宿儺",
-    "aliases": {
-      "1": "Hokuna",
-      "2": "The King of Curses",
-      "3": "The Fallen",
-      "4": "The Strongest Sorcerer in History"
-    },
+    "aliases": [
+      "Hokuna",
+      "The King of Curses",
+      "The Fallen",
+      "The Strongest Sorcerer in History"
+    ],
     "grade": "Calamity",
     "species": "Incarnated Sorcerer",
     "occupation": "Generational hater",
-    "relatives": {
-      "1": "Gojo Hanako",
-      "2": "Itadori Jin",
-      "3": "Gojo Kyouji"
-    },
+    "relatives": [
+      "Gojo Hanako",
+      "Itadori Jin",
+      "Gojo Kyouji"
+    ],
     "age": "1000+",
     "gender": "Male"
   },
   {
     "id": "",
+    "href": "",
     "title": "",
     "imgSource": "",
     "kanji": "",
