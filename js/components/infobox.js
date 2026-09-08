@@ -1,6 +1,6 @@
 const pageCheck = document.querySelector(".hokuna");
 
-async function fetchInfoboxData() {
+export async function fetchInfoboxData() {
   try {
     const response = await fetch("./js/data/infobox.json");
     const data = await response.json();
