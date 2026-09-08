@@ -71,10 +71,6 @@
 
 /* #region BURGER MENU VISUALS */
 
-:root{
-    --burger-link-clr: #ff9100;
-}
-
 .burger-menu{
     display: flex;
     justify-content: center;
@@ -88,11 +84,11 @@
     border-radius: 3px;
     padding: 3px 5px;
     transition: 100ms;
-    color: var(--burger-link-clr);
+    color: var(--link-clr);
 }
 
 .burger-menu a:hover{
-    border-bottom: 1px solid var(--burger-link-clr);
+    border-bottom: 1px solid var(--link-clr);
 }
 
 .menu-section{

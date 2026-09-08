@@ -12,9 +12,13 @@
 @import url(layout/main.css);
 @import url(layout/main-nav.css);
 @import url(layout/infobox.css);
+@import url(layout/footer.css);
 @import url(layout/style.css);
 
 /* Font families */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 @font-face {
   font-family: 'jjk-heading';
   src:  url('../assets/fonts/jujutsu-heading.ttf') format('truetype');
