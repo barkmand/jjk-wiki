@@ -9,6 +9,7 @@
 /* Layout css */
 @import url(layout/page-nav.css);
 @import url(layout/hero.css);
+@import url(layout/flowchart.css);
 @import url(layout/main.css);
 @import url(layout/main-nav.css);
 @import url(layout/infobox.css);

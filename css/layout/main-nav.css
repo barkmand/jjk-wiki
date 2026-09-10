@@ -3,7 +3,7 @@
     background-color: var(--secondary-bg-clr);
     width: 250px;
     padding: 1.5rem;
-    border-radius: 5px;
+    border-radius: 10px;
     border: solid 1px var(--accent-clr);
     margin: 2rem 0 2.5rem;
 }

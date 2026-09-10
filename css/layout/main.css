@@ -1,5 +1,5 @@
 
-.page-main{
+main{
     margin: 0 auto;
     width: 100%;
     opacity: 95%;
@@ -9,9 +9,8 @@
     
     @media (min-width: 768px){
         width: 96%;
-        border: solid var(--main-border-clr);
-        border-radius: 5px;
-        border-width: 1px 1px 1px 1px ;
+        border: solid var(--main-border-clr) 1px;
+        border-radius: 10px;
     }
 }
 
@@ -20,8 +19,8 @@
     @media(min-width: 1080px){
         display: flex;
         flex-direction: row-reverse;
+        justify-content: space-between;
     }
-
 }
 
 .main-heading{

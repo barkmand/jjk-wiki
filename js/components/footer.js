@@ -6,7 +6,7 @@ export function footer(){
         siteCheck.insertAdjacentHTML(
             "beforeend", 
             `
-            <div class="footer-pins1">
+        <div class="footer-pins1">
             <div class="pin"></div>
             <div class="pin"></div>
         </div>
@@ -14,8 +14,11 @@ export function footer(){
             <div class="pin"></div>
             <div class="pin"></div>
         </div>
-                <nav class="footer-nav"><a href="index.html" class="to-homepage-btn"><i class="fa-solid fa-house"></i></a><a href="#" class="to-top-btn"><i class="fa-solid fa-circle-up"></i></a></nav>
-        <p class="footer-text"><span class="authors">Authors:</span><span>Bjarke</span><span>Willow</span><span>David</span></p>
+                <nav class="footer-nav">
+                    <a href="index.html" class="to-homepage-btn"><i class="fa-solid fa-house"></i></a>
+                    <p class="footer-text"><span class="authors">Authors:</span><span>Bjarke</span><span>Willow</span><span>David</span></p>    
+                    <a href="#" class="to-top-btn"><i class="fa-solid fa-circle-up"></i></a>
+                </nav>
             `
         )
     }

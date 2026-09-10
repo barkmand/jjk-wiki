@@ -1,0 +1,89 @@
+
+.flowchart-section{
+    width: 100%;
+    padding: 3rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flowchart-heading{
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+    border-bottom: 1px dashed var(--accent-clr);
+    width: 90%;
+}
+
+.flowchart-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    @media(min-width: 768px){
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
+.flowchart-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    min-height: 200px;
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: var(--secondary-bg-clr);
+    border-radius: 10px;
+    border: 1px solid;
+    cursor: pointer;
+    transition: 200ms;
+    &:hover{
+        border-color: var(--secondary-accent-clr);
+    }
+}
+
+.flowchart-btn.active{
+    border-color: var(--secondary-accent-clr);
+}
+
+.flowchart-menu{
+    /* border-image: linear-gradient(to top left, rgb(161, 213, 255), rgb(74, 174, 255), var(--secondary-accent-clr)) 1;
+    border-width: 1px;
+    border-style: solid; */
+    border: 1px solid var(--secondary-accent-clr);
+    border-radius: 10px;
+    width: 60%;
+    min-width: 300px;
+    margin-top: 2rem;
+    background-color: var(--secondary-bg-clr);
+    padding: 2rem;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-height: 300px;
+    font-size: 1.5rem;
+}
+
+.flowchart-menu.active{
+    display: flex;
+}
+
+.flowchart-menu a{
+    width: fit-content;
+
+
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
