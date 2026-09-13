@@ -9,5 +9,7 @@ footer()
 
 /* functions */
 import { burgerBtn } from "./components/burger-btn.js";
+import { flowchart } from "./components/flowchart.js";
 
 burgerBtn()
+flowchart()

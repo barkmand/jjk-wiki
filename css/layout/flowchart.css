@@ -54,9 +54,9 @@
 }
 
 .flowchart-menu{
-    /* border-image: linear-gradient(to top left, rgb(161, 213, 255), rgb(74, 174, 255), var(--secondary-accent-clr)) 1;
+    border-image: linear-gradient(to top left, rgb(161, 213, 255), rgb(74, 174, 255), var(--secondary-accent-clr)) 1;
     border-width: 1px;
-    border-style: solid; */
+    border-style: solid;
     border: 1px solid var(--secondary-accent-clr);
     border-radius: 10px;
     width: 60%;
