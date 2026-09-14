@@ -1,6 +1,8 @@
 [
   {
     "id": "0",
+    "category": "character",
+    "subcategory": "good",
     "href": "ren-fujimori.html",
     "title": "Fujimori Ren",
     "imgSource": "assets/images/ren-fujimori.png",
@@ -21,6 +23,8 @@
   },
   {
     "id": "1",
+    "category": "character",
+    "subcategory": "good",
     "href": "hokuna.html",
     "title": "Sukuna (Honoka's body)",
     "imgSource": "assets/images/meguna.webp",
@@ -44,6 +48,8 @@
   },
   {
     "id": "",
+    "category": "",
+    "subcategory": "",
     "href": "",
     "title": "",
     "imgSource": "",

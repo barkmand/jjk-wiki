@@ -70,8 +70,8 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
-    max-height: 300px;
     font-size: 1.5rem;
+    max-height: 300px;
 }
 
 .flowchart-menu.active{
