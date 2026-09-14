@@ -1,8 +1,10 @@
 /* html insertions */
+import { pageTitle } from "./components/pageTitle.js";
 import { header } from "./components/header.js";
 import { infobox } from "./components/infobox.js";
 import { footer } from "./components/footer.js";
 
+pageTitle()
 header()
 infobox()
 footer()

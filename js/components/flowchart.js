@@ -54,7 +54,7 @@ export function flowchart(){
                 flowchartMenu1.innerHTML = data.map((element) => {
                         return`<a href="${element.href}?id=${element.id}">${element.title}</a>`
                     }).join("")
-                /* NEED TO MAKE IT ONLY INPUT ELEMENTS WITH A "category" VALUE OF "character" */
+                /* NEED TO MAKE IT ONLY INPUT ELEMENTS WITH A "category" VALUE OF "character" AND A "subcategory" VALUE OF "the specific button you just pressed" */
             })
         })
     
@@ -64,7 +64,7 @@ export function flowchart(){
                 flowchartMenu2.innerHTML = data.map((element) => {
                         return`<a href="${element.href}?id=${element.id}">${element.title}</a>`
                     }).join("")
-                /* NEED TO MAKE IT ONLY INPUT ELEMENTS WITH A "category" VALUE OF "battle" */
+                /* NEED TO MAKE IT ONLY INPUT ELEMENTS WITH A "category" VALUE OF "battle" AND A "subcategory" VALUE OF "the specific button you just pressed" */
             })
         })
     
@@ -74,7 +74,7 @@ export function flowchart(){
                 flowchartMenu3.innerHTML = data.map((element) => {
                         return`<a href="${element.href}?id=${element.id}">${element.title}</a>`
                     }).join("")
-                /* NEED TO MAKE IT ONLY INPUT ELEMENTS WITH A "category" VALUE OF "other" */
+                /* NEED TO MAKE IT ONLY INPUT ELEMENTS WITH A "category" VALUE OF "other" AND A "subcategory" VALUE OF "the specific button you just pressed" */
             })
         })
     
@@ -84,7 +84,7 @@ export function flowchart(){
                 flowchartMenu4.innerHTML = data.map((element) => {
                         return`<a href="${element.href}?id=${element.id}">${element.title}</a>`
                     }).join("")
-                /* NEED TO MAKE IT ONLY INPUT ELEMENTS WITH A "category" VALUE OF "world" */
+                /* NEED TO MAKE IT ONLY INPUT ELEMENTS WITH A "category" VALUE OF "world" AND A "subcategory" VALUE OF "the specific button you just pressed" */
             })
         })
         

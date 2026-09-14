@@ -3,6 +3,10 @@ export function burgerBtn(){
     const burgerBtn = document.querySelector(".burger-button")
     const bars = document.querySelectorAll(".bar")
     const burgerMenu = document.querySelector(".burger-menu")
+
+    if(!burgerBtn){
+        return
+    }
     
     burgerBtn.addEventListener("click", () => {
         bars.forEach ((bar) => {
@@ -17,4 +21,5 @@ export function burgerBtn(){
         })
         burgerMenu.classList.remove("active")
     })
+        
 }

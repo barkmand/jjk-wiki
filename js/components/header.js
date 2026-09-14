@@ -1,16 +1,13 @@
+const siteCheck = document.querySelector(".page-header");
 
-const siteCheck = document.querySelector(".page-header")
-
-import { fetchInfoboxData } from "./infobox.js"
+import { fetchInfoboxData } from "./infobox.js";
 const data = await fetchInfoboxData();
 
-        
-
-export function header(){
-    if (siteCheck){
-        siteCheck.insertAdjacentHTML(
-            "beforeend", 
-            `
+export function header() {
+  if (siteCheck) {
+    siteCheck.insertAdjacentHTML(
+      "beforeend",
+      `
             
             <nav class="page-nav">
             <a href="index.html"><img src="assets/images/Jujutsu_Kaisen_logo_in_Japan.png" class="nav-icon"></a>
@@ -23,19 +20,36 @@ export function header(){
             <section class="menu-section"><a href="index.html">Frontpage</a></section>
             <hr class="menu-seperator">
                 <section class="menu-section">
-                ${data.map((element) => {
-                    return`<a href="${element.href}?id=${element.id}">${element.title}</a>`
-                }).join("")
-            }
+                <p class="menu-section-btn">Characters</p>
+                <div class="menu-section-container">
+                    ${data
+                      .map((element) => {
+                        return `<a href="${element.href}?id=${element.id}">${element.title}</a>`;
+                      })
+                      .join("")}
+                      <!-- NEED TO MAKE IT ONLY INPUT ELEMENTS WITH A "category" VALUE OF "character"-->
+                </div>
                 </section>
+                <hr class="menu-seperator">
+                <section class="menu-section">
+                <p class="menu-section-btn">Battles</p>
+                <div class="menu-section-container">
+                    ${data
+                      .map((element) => {
+                        return `<a href="${element.href}?id=${element.id}">${element.title}</a>`;
+                      })
+                      .join("")}
+                      <!-- NEED TO MAKE IT ONLY INPUT ELEMENTS WITH A "category" VALUE OF "battle"-->
+                </div>
+                </section>
+                
                 </div>
                 </nav>
                 <section class="page-hero">
                 <h1>Jujutsu Kaisen FanWiki</h1>
                 </section>
                 
-                `
-            )
-        }
-    }
-    
+                `,
+    );
+  }
+}

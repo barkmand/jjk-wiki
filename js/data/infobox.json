@@ -1,6 +1,6 @@
 [
   {
-    "id": "0",
+    "id": "fujimori-ren",
     "category": "character",
     "subcategory": "good",
     "href": "ren-fujimori.html",
@@ -22,11 +22,11 @@
     "gender": "Androgynous"
   },
   {
-    "id": "1",
+    "id": "hokuna",
     "category": "character",
-    "subcategory": "good",
+    "subcategory": "bad",
     "href": "hokuna.html",
-    "title": "Sukuna (Honoka's body)",
+    "title": "Hokuna",
     "imgSource": "assets/images/meguna.webp",
     "kanji": "両面宿儺",
     "aliases": [

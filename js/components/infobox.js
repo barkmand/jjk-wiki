@@ -16,7 +16,6 @@ const search = location.search
         const subjectID = new URLSearchParams(search).get("id")
 
         const subject = data.find(subject => subject.id == subjectID)
-        console.log(subject)
 
 export async function infobox() {
   const infobox = document.querySelector(".infobox");
